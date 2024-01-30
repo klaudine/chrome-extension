@@ -3,6 +3,12 @@ const inputEl = document.getElementById("input-el")
 const inputBtn = document.getElementById("input-btn")
 const ulEl = document.getElementById("ul-el")
 
+localStorage.setItem('myLeads', 'www.examplelead.com'); // save key-value pair in localStorage
+localStorage.getItem('myLeads'); // get the value 
+console.log('myLeads') // log value to the console
+localStorage.clear() // clear localStorage
+
+
 inputBtn.addEventListener("click", function() {
     myLeads.push(inputEl.value)
     inputEl.value = ""; //clears the input field after submitting
